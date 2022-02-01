@@ -6,6 +6,8 @@
 //
 
 class DataManager {
+    static let data = DataManager()
+    
     let names = [
         "Tim",
         "Jason",
@@ -32,7 +34,7 @@ class DataManager {
         "Linder"
     ]
     
-    let eMaeils = [
+    let emails = [
         "mail_11@yahoo.com",
         "mail_22@yahoo.com",
         "mail_33@yahoo.com",
