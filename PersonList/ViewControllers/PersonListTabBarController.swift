@@ -8,19 +8,15 @@
 import UIKit
 
 class PersonListTabBarController: UITabBarController {
-    
-    private var persons = Person.getPersons()
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        dataTransfer()
     }
     
-
-    
-    // MARK: - Navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        guard let viewControllers = tabBarController?.viewControllers else { return }
+    private func dataTransfer() {
+        let persons = Person.getPersons()
+        guard let viewControllers = viewControllers else { return }
         
         for viewController in viewControllers {
             if let contactListVC = viewController as? ContactListViewController {
@@ -30,5 +26,4 @@ class PersonListTabBarController: UITabBarController {
             }
         }
     }
-
 }

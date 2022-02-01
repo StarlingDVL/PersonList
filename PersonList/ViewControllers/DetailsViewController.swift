@@ -19,6 +19,6 @@ class DetailsViewController: UIViewController {
         
         navigationItem.title = person.fullName
         phoneLabel.text = "\(person.phoneNumber)"
-        emailLabel.text = "\(person.eMail)"
+        emailLabel.text = "\(person.email)"
     }
 }
