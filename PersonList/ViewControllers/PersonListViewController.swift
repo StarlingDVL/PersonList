@@ -31,9 +31,9 @@ class PersonListViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         
         if indexPath.row == 0 {
-            content.text = person.phoneNumber
+            content.text = "Phone: \(person.phoneNumber)"
         } else {
-            content.text = person.email
+            content.text = "Email: \(person.email)"
         }
         cell.contentConfiguration = content
 
