@@ -31,9 +31,11 @@ class PersonListViewController: UITableViewController {
         var content = cell.defaultContentConfiguration()
         
         if indexPath.row == 0 {
-            content.text = "Phone: \(person.phoneNumber)"
+            content.text = "\(person.phoneNumber)"
+            content.image = UIImage(systemName: "phone")
         } else {
-            content.text = "Email: \(person.email)"
+            content.text = "\(person.email)"
+            content.image = UIImage(systemName: "mail")
         }
         cell.contentConfiguration = content
 
